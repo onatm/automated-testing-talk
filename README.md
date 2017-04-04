@@ -8,7 +8,7 @@ OH HAI
 - Written in Ruby
 - Understands **Gherkin Language**
 
-``` ruby
+```
 Feature:
   As a user I should be able to create a clone
 
@@ -35,22 +35,8 @@ fill_in('Clone Name', with: 'Clone1')
 
 ## Demo
 
-`dockerfile`
-
 ```
-...
-```
-
-start a container
-
-```
-docker ...
-```
-
-run the tests
-
-```
-cucumber ...
+xvfb-run -a --server-args="-screen 0 1920x1080x24" cucumber --format pretty --format html --out results.html
 ```
 
 ## References
