@@ -20,11 +20,26 @@ Scenario: Navigate to 'Clone Destination' page
   Then I should see "Clone Destination" heading
 ```
 
+``` ruby
+Given(/^I am on SQL Clone Dashboard$/) do
+  pending
+end
+
+When(/^I click on "([^"]*)" button$/) do |arg1|
+  pending
+end
+
+Then(/^I should see "([^"]*)" heading$/) do |arg1|
+  pending
+end
+```
+
 ## What is Capybara?
 
-- Acceptance test framework for web applications
+- Web-based test automation framework
 - Can be used with **Cucumber**
 - Selenium, PhantomJS, etc.
+- DSL
 
 ``` ruby
 visit('/dashboard')
